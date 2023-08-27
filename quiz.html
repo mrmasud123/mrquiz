@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR quiz</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header starts -->
+    <div class="container-fluid p-3" id="header">
+        <div class="row">
+            <div class="col">
+            <div class="col-12 d-flex align-items-center justify-content-evenly">
+                <div class="col-3">
+                    <a href="#" class="text-decoration-none text-light fw-bold display-6">MR Quiz.</a>
+                </div>
+                <div class="col-6">
+                    <nav class="nav">
+                        <a href="index.html" class="nav-link bg-success ms-1 rounded text-light">Home</a>
+                        <a href="about.html" class="nav-link bg-success ms-1 rounded text-light">About us</a>
+                        <a href="teacher-list.html" class="nav-link bg-success ms-1 rounded text-light">Our teachers</a>
+                        <a href="tutorial.html" class="nav-link bg-success ms-1 rounded text-light">Tutorial</a>
+                        <a href="materials.html" class="nav-link bg-success ms-1 rounded text-light">Study materials</a>
+                    </nav>
+                </div>
+                <div class="col-3 d-flex align-items-center" style="justify-content: right;">
+                    <div class="login-info">
+                        <button class="btn btn-primary useroption">
+                            <span class="fw-bold">Hello Masud</span>
+                        </button>
+                    </div>
+                    <div class="options bg-success rounded mt-1 mb-1 pt-2 pb-2">
+                        <img src="assets/about.jpg" alt="">
+                        <a href="" class="nav-link bg-info ms-1 rounded text-light mt-1 p-2 mb-2">View profile</a>
+                        <a href="" class="nav-link bg-danger ms-1 rounded text-light  p-2">Logout</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header ends -->
+    <div class="container mt-5">
+        <div class="quiz-img">
+            <img src="assets/img.png" alt="quiz">
+        </div>
+        <div class="row">
+            <h1 class="text-center text-capitalize text-dark">available Courses</h1>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <section class="col-6">
+                    <table class="mt-3 mb-3 table table-striped">
+                        <tr>
+                            <td class="fw-bold text-center">One</td>
+                            <td class="text-center"><button class="btn btn-success">Enter?</button></td>
+                        </tr>
+                        
+                    </table>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            console.log("Jquery");
+            $userBtn=$('.useroption');
+            $userInfo=$('.options');
+            $userBtn.click(function(){
+                $('.options').toggleClass("info");
+            });
+            
+        });
+    </script>
+</body>
+</html>
